@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <button onclick="printmark(1)" id="1"></button>
+            <button onclick="printmark(2)" id="2"></button>
+            <button onclick="printmark(3)" id="3"></button>
+        </div>
+        <div class="wrapper">
+            <button onclick="printmark(4)" id="4"></button>
+            <button onclick="printmark(5)" id="5"></button>
+            <button onclick="printmark(6)" id="6"></button>
+        </div>
+        <div class="wrapper">
+            <button onclick="printmark(7)" id="7"></button>
+            <button onclick="printmark(8)" id="8"></button>
+            <button onclick="printmark(9)" id="9"></button>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center; justify-content: center;">
+            <button class="btn" onclick="reset()">reset</button>
+       
+            <p id="winner-msg" style="font-size: 30px;">player X turn</p>
+        </div>
+        <div class="score">
+            <div class="playerXscore score-div"> 
+                <h3>PLAYER X SCORE</h3>
+                <h2 id="x-point">0</h2>
+            </div>
+            <div class="playeroscore score-div">
+                <h3>PLAYER O SCORE</h3>
+                <h2 id="o-point">0</h2>
+            </div>
+        </div>
+        <div style="display: flex;justify-content: center;">
+        <button style="width: 150px; height: 100px;" class="score-reset btn" onclick="resetScore()">reset score</button>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
